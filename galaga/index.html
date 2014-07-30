@@ -1,0 +1,57 @@
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src='/litecanvas.js'></script>
+<script src='galaga.js'></script>
+<link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
+
+<style>
+	#c{
+		height:650px;
+		width:650px;
+		display: inline-block;
+		margin: 0;
+		vertical-align: top;
+	}
+	#newgame{
+		position: relative;
+	}
+	#score{
+		position:fixed;
+		top: 10px;
+		left:500px;
+		color:red;
+		z-index:9999;
+		font-family: 'Ubuntu Mono';
+	}
+	#gameover{
+		position:fixed;
+		top:350px;
+		left:250px;
+		color:red;
+		opacity:0;
+		font-family: 'Ubuntu Mono';
+	}
+	#start{
+		position:fixed;
+		top:400px;
+		left:200px;
+		color:red;
+		opacity:1;
+		font-family: 'Ubuntu Mono';
+	}
+	body{
+		overflow:hidden;
+	}
+
+</style>
+
+<body>
+
+<canvas id="c" height=1000 width=1000></canvas>
+
+<h2 id='score'>Score: 0</h2>
+<h1 id="gameover">Game Over</h1>
+<h2 id='start'>Press Enter to Start</h2>
+
+</body>
+
